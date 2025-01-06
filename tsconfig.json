@@ -1,0 +1,40 @@
+{
+  "include": ["src/**/*"], // Include all files in `src` folder
+  "exclude": ["node_modules"], // Exclude `node_modules` folder
+  "compilerOptions": {
+    "baseUrl": "./", // Base directory for resolving modules
+    "outDir": "./dist/src", // Output directory for compiled files
+    "strict": true, // Enable strict type-checking
+    "resolveJsonModule": true, // Allows importing JSON files
+    "allowJs": true, // allow JS or JSX imports in ts files
+    "skipLibCheck": true, // Skips type checking for node modules library files
+    "inlineSourceMap": true, // Enables source maps for easier debugging
+    "inlineSources": true, // Include the original .tsx files in the source maps
+    "declaration": true, // Generate type declaration (*.d.ts) files
+    "allowSyntheticDefaultImports": true,
+    // resolve import names to their actual import paths
+    // by pointing to the coorect @types location
+    "paths": {
+      "react": ["packages/react-16/node_modules/@types/react"],
+      "react-dom": ["packages/react-16/node_modules/@types/react-dom"],
+      "react18": ["packages/react-18/node_modules/@types/react"],
+      "react18-dom/*": ["packages/react-18/node_modules/@types/react-dom/*"],
+      "react18-router": ["packages/react-18/node_modules/react-router-dom"],
+      "react18-bootstrap/*": [
+        "packages/react-18/node_modules/react-bootstrap/*"
+      ],
+      "*": [
+        "packages/react-16/node_modules/*",
+        "packages/react-18/node_modules/*",
+        "node_modules/*" // Fallback to default root node_modules
+      ],
+      "jquery": ["packages/react-16/node_modules/@types/jquery"]
+    },
+    "esModuleInterop": true,
+    "target": "es6", // Set target to ES6 or es2015
+    "jsx": "preserve",
+    // "module" controls what JS output is produced
+    // either pure JS or JS modules (i.e. with import/exports)
+    "module": "Preserve"
+  }
+}

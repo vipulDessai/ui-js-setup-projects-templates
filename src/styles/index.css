@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-as-link {
+  background: none;
+  border: none;
+  font-family: Segoe UI;
+  outline: none;
+}
+.btn-as-link:focus {
+  outline: none;
+}
+.btn-as-link:disabled {
+  cursor: not-allowed;
+}
+button.btn-primary:focus {
+  outline: none;
+}
+
+.bg-custom-gray-400 {
+  color: #687584;
+}
+
+button {
+  outline: none !important;
+  &::focus {
+    outline: none !important;
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "lsq-cache",
+  "name": "npm-nodejs-nest",
   "version": "0.0.1",
-  "description": "Develop and deploy applications with the LSQ Cache module, the module provides first class TypeScript support and makes it easy to call LSQ Cache API services.",
+  "description": "npm node js nest",
   "author": "",
   "private": true,
   "license": "UNLICENSED",

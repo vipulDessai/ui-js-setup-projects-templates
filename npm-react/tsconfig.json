@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Set target to ES6
+    "module": "Preserve", // preserve keeps the import export
+    "strict": true, // Enable strict type-checking
+    "resolveJsonModule": true, // Allows importing JSON files
+    "jsx": "react", // Supports JSX and the output file produces React.createElement, its needed as NPM package should be plain JS for CRA
+    "outDir": "./dist/src", // Output directory for compiled files
+    "skipLibCheck": true, // Skips type checking for library files
+    "inlineSourceMap": true, // Enables source maps for easier debugging
+    "declaration": true, // Generate type declaration files
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*", "./global.d.ts"], // Include all files in `src` folder
+  "exclude": ["node_modules"] // Exclude `node_modules` folder
+}

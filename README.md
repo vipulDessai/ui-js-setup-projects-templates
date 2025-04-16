@@ -7,3 +7,5 @@
 ## NPM react package
 
 ## NPM Node JS package (nest JS and jest)
+
+## react reducer context
